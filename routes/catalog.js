@@ -20,7 +20,10 @@ router.post('/book/create', book_controller.book_create_post);
 router.get('/book/:id/delete', book_controller.book_delete_post);
 
 // Get request for updating book
-router.get('/book/:id/update', book_controller.book_update_post);
+router.get('/book/:id/update', book_controller.book_update_get);
+
+// Post request for updating book
+router.post('/book/:id/update', book_controller.book_update_post);
 
 // Get request for a single book
 router.get('/book/:id', book_controller.book_detail);
